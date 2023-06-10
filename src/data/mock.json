@@ -1,0 +1,177 @@
+{
+    "depthChart": [
+      {
+        "unit": 1,
+        "players": [
+          {
+            "team": "MIA",
+           
+            "photoUrl": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629216.png",
+            "nbaTeamId": 1610612748,
+            "jerseyNum": "2",
+            "currentTeam": "MIA",
+            "dxTeamId": 13,
+            "league": "NBA",
+            "leagueType": "NBA"
+          },
+          {
+            "team": "MIA",
+           
+            "photoUrl": "https://cdn.nba.com/headshots/nba/latest/1040x760/202710.png",
+            "nbaTeamId": 1610612748,
+            "jerseyNum": "22",
+            "currentTeam": "MIA",
+            "dxTeamId": 13,
+            "league": "NBA",
+            "leagueType": "NBA"
+          },
+          {
+            "team": "MIA",
+           
+            "photoUrl": "https://cdn.nba.com/headshots/nba/latest/1040x760/1631107.png",
+            "nbaTeamId": 1610612748,
+            "jerseyNum": "5",
+            "currentTeam": "MIA",
+            "dxTeamId": 13,
+            "league": "NBA",
+            "leagueType": "NBA"
+          },
+          {
+            "team": "MIA",
+           
+            "photoUrl": "https://cdn.nba.com/headshots/nba/latest/1040x760/201567.png",
+            "nbaTeamId": 1610612748,
+            "jerseyNum": "0",
+            "currentTeam": "MIA",
+            "dxTeamId": 13,
+            "league": "NBA",
+            "leagueType": "NBA"
+          },
+          {
+            "team": "MIA",
+          
+            "photoUrl": "https://cdn.nba.com/headshots/nba/latest/1040x760/1628389.png",
+            "nbaTeamId": 1610612748,
+            "jerseyNum": "13",
+            "currentTeam": "MIA",
+            "dxTeamId": 13,
+            "league": "NBA",
+            "leagueType": "NBA"
+          }
+        ]
+      },
+      {
+        "unit": 2,
+        "players": [
+          {
+            "team": "MIA",
+           
+            "photoUrl": "https://cdn.nba.com/headshots/nba/latest/1040x760/200768.png",
+            "nbaTeamId": 1610612748,
+            "jerseyNum": "7",
+            "currentTeam": "MIA",
+            "dxTeamId": 13,
+            "league": "NBA",
+            "leagueType": "NBA"
+          },
+          {
+            "team": "MIA",
+            
+            "photoUrl": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629622.png",
+            "nbaTeamId": 1610612748,
+            "jerseyNum": "31",
+            "currentTeam": "MIA",
+            "dxTeamId": 13,
+            "league": "NBA",
+            "leagueType": "NBA"
+          },
+          {
+            "team": "MIA",
+           
+            "photoUrl": "https://cdn.nba.com/headshots/nba/latest/1040x760/1628997.png",
+           
+            "leagueType": "NBA"
+          },
+          {
+            "team": "MIA",
+            "nbaId": 1629312,
+        
+          
+            "photoUrl": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629312.png",
+           
+            "leagueType": "NBA"
+          },
+          {
+            "team": "MIA",
+            "nbaId": 2617,
+            "unit": 2,
+            
+            "twitterHandle": "ThisIsUD",
+            "photoUrl": "https://cdn.nba.com/headshots/nba/latest/1040x760/2617.png",
+        
+            "leagueType": "NBA"
+          }
+        ]
+      },
+      {
+        "unit": 3,
+        "players": [
+          {
+            "team": "MIA",
+          
+  
+            "photoUrl": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629130.png",
+            
+            "leagueType": "NBA"
+          },
+          {
+            "team": "MIA",
+            
+            "photoUrl": "https://cdn.nba.com/headshots/nba/latest/1040x760/1631288.png",
+            
+            "leagueType": "NBA"
+          },
+          {
+            "team": "MIA",
+           
+            "photoUrl": "https://cdn.nba.com/headshots/nba/latest/1040x760/1631115.png",
+         
+            "leagueType": "NBA"
+          },
+          {
+            
+            "photoUrl": "https://cdn.nba.com/headshots/nba/latest/1040x760/203469.png"
+         
+          },
+          {
+            
+            "photoUrl": "https://cdn.nba.com/headshots/nba/latest/1040x760/1630209.png"
+          
+          }
+        ]
+      },
+      {
+        "unit": 4,
+        "players": [
+          {
+            "team": "MIA",
+            "nbaId": 1629639,
+            "unit": 4,
+            "
+            "photoUrl": "https://cdn.nba.com/headshots/nba/latest/1040x760/1629639.png"
+   
+          },
+          {
+            "team": "MIA",
+            "nbaId": 203506,
+           
+            "twitterHandle": "VICICANFLY4IU",
+            "photoUrl": "https://cdn.nba.com/headshots/nba/latest/1040x760/203506.png"
+            
+          },
+          null,
+          null,
+          null
+        ]
+      }
+    ],
