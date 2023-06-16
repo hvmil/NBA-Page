@@ -94,7 +94,7 @@ const ScoutingReport = () => {
                 <ListItemAvatar>
                   <Avatar
                     alt={report.scout}
-                    src="https://img.freepik.com/free-vector/cute-cat-gaming-cartoon_138676-2969.jpg?size=626&ext=jpg"
+                    src="https://cdn.imgbin.com/20/3/0/imgbin-mark-cuban-dallas-mavericks-shark-tank-investor-investment-nba-GcyULhP7akKUeWyxe47gQM7Bj.jpg"
                   />
                 </ListItemAvatar>
                 <ListItemText
