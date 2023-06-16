@@ -40,7 +40,6 @@ const ScoutingReport = () => {
       setNewAuthort("");
       setNewTitle("");
     });
-  
   };
 
   useEffect(() => {
@@ -57,16 +56,35 @@ const ScoutingReport = () => {
         alignItems: "center",
       }}
     >
+      <Divider />
       <div>
-        <Typography variant="h3" color='white' sx={{mt:4}}>Scout Reports</Typography>
-       
+        <Typography
+          variant="h2"
+          color="white"
+          sx={{
+            mt: 4,
+            "@media (max-width: 780px)": {
+              width: "100%",
+              maxWidth: "100%",
+              fontSize: "25px",
+              marginBottom: "20px",
+            },
+          }}
+        >
+          Scout Reports
+        </Typography>
       </div>
+      <Divider />
       <List
         sx={{
           width: "100%",
           maxWidth: "80%",
           bgcolor: "background.paper",
           borderRadius: "10px",
+          "@media (max-width: 780px)": {
+            width: "100%",
+            maxWidth: "100%",
+          },
         }}
       >
         {reports.map((report, i) => {
@@ -111,7 +129,19 @@ const ScoutingReport = () => {
         }}
       >
         <div>
-          <h1 style={{ color: "white" }}>Submit New Report</h1>
+          <Typography
+            sx={{
+              margin: "10px",
+              "@media (max-width: 780px)": {
+                width: "100%",
+                maxWidth: "100%",
+              },
+            }}
+            variant="h2"
+            color="white"
+          >
+            Submit a New Report
+          </Typography>
         </div>
         <form
           onSubmit={handleSubmit}
@@ -153,7 +183,7 @@ const ScoutingReport = () => {
               }}
             />
           </div>
-          <div>
+          <div style={{ display: "flex", justifyContent: "center" }}>
             <TextField
               id="standard-multiline-static"
               multiline
@@ -168,6 +198,10 @@ const ScoutingReport = () => {
                 width: "60vw",
                 alignSelf: "center",
                 borderRadius: "2px",
+                "@media (max-width: 780px)": {
+                  width: "100%",
+                  maxWidth: "100%",
+                },
               }}
             />
           </div>
@@ -177,6 +211,10 @@ const ScoutingReport = () => {
               backgroundColor: "#F9A01B !important",
               width: "10vw",
               alignSelf: "center",
+              "@media (max-width: 780px)": {
+                width: "60%",
+                maxWidth: "100%",
+              },
             }}
             type="submit"
           >

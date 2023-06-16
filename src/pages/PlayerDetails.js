@@ -19,6 +19,7 @@ import {
   Typography,
   CardMedia,
   Card,
+  Divider,
 } from "@mui/material/";
 
 function createData(
@@ -71,11 +72,31 @@ const PlayerDetails = ({ player }) => {
 
   return (
     <div>
-      <Typography variant="h1" color="white" sx={{ textAlign: "center" }}>
+      <Typography
+        variant="h1"
+        color="white"
+        sx={{
+          textAlign: "center",
+          "@media (max-width: 780px)": {
+            width: "100%",
+            maxWidth: "100%",
+          },
+        }}
+      >
         {oladipo.bio[0].name}
       </Typography>
-      <div style={{display:'flex', justifyContent:'center'}}>
-        <Card sx={{ width: "40%" }}>
+      <Divider />
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <Card
+          sx={{
+            width: "40%",
+            "@media (max-width: 780px)": {
+              width: "90%",
+              maxWidth: "100%",
+              margin: "20px",
+            },
+          }}
+        >
           <CardMedia
             component="div"
             sx={{
@@ -96,12 +117,33 @@ const PlayerDetails = ({ player }) => {
           marginTop: "5vh",
         }}
       >
-        <h1 style={{ color: "white" }}>Game Logs</h1>
+        <Typography
+          sx={{
+            "@media (max-width: 780px)": {
+              width: "100%",
+              maxWidth: "100%",
+            },
+          }}
+          variant="h2"
+          color="white"
+        >
+          Game Logs
+        </Typography>
       </div>
 
       <div>
         <Box sx={{ minWidth: 120 }}>
-          <FormControl sx={{ m: 1, width: 300, mt: 3 }}>
+          <FormControl
+            sx={{
+              m: 1,
+              width: 300,
+              mt: 3,
+              "@media (max-width: 780px)": {
+                width: "30%",
+                maxWidth: "100%",
+              },
+            }}
+          >
             <Select
               displayEmpty
               id="season-sort"
