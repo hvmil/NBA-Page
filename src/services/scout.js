@@ -1,5 +1,5 @@
 import axios from "axios";
-const baseUrl = "http://localhost:3001/scoutingReports";
+const baseUrl = "https://nba-page-cf0253c037d1.herokuapp.com/scoutingReports";
 
 const getAll = () => {
   const request = axios.get(baseUrl);
