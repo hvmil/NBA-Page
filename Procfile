@@ -1,1 +1,1 @@
-web: json-server --watch ./src/data/oladipo.json --port $PORT
+web: node server.js

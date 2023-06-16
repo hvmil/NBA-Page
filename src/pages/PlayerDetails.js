@@ -79,7 +79,6 @@ const PlayerDetails = ({ player }) => {
           <CardMedia
             component="div"
             sx={{
-              // 16:9
               pt: "56.25%",
               backgroundColor: "#98002E",
             }}
