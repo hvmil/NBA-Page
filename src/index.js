@@ -2,15 +2,32 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 import { ThemeProvider, createTheme } from "@mui/material";
+import { BrowserRouter } from "react-router-dom";
 
 const theme = createTheme({
+  components: {
+    MuiTableHead: {
+      styleOverrides: {
+        root: {
+          backgroundColor: "#F9A01B !important",
+        },
+      },
+    },
+    MuiSelect: {
+      styleOverrides: {
+        select: {
+          backgroundColor: "#F9A01B !important",
+        },
+      },
+    },
+  },
   palette: {
     type: "light",
     primary: {
-      main: "#141b2d"
+      main: "#141b2d",
     },
     secondary: {
-      main:"#4cceac"
+      main: "#F9A01B",
     },
     neutral: {
       dark: "#3d3d3d",
@@ -18,7 +35,7 @@ const theme = createTheme({
       light: "#e0e0e0",
     },
     background: {
-      default: "#141b2d",
+      default: "#012622",
     },
   },
 });
@@ -26,8 +43,10 @@ const theme = createTheme({
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <App />
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );

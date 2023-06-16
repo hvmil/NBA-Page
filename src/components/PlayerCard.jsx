@@ -7,14 +7,14 @@ import {
   Typography,
 } from "@mui/material";
 import Stats from "./Stats";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Pfp from "./Pfp";
 import Sorting from "./Sorting";
+import { Link } from "react-router-dom";
+import TeamPerformance from "./TeamPerformance"
 
-
-const PlayerCards = ({ team, stat }) => {
+const PlayerCard = ({ team, setPlayer }) => {
   const [sortOption, setSortOption] = useState("ppg");
-  const [selectedPlayer, setSelectedPlayer] = useState(null);
 
   const handleSort = (option) => {
     setSortOption(option);
@@ -27,30 +27,25 @@ const PlayerCards = ({ team, stat }) => {
         return b["fg%"] - a["fg%"];
       case "tp%":
         return b["tp%"] - a["tp%"];
-      case "ft%":
+      case "reb":
         return b["reb"] - a["reb"];
       default:
         return 0;
     }
   });
-  useEffect(() => {
-    if (selectedPlayer) {
-      console.log(selectedPlayer.nbaId);
-    }
-  }, [selectedPlayer]);
 
   return (
-    <Container sx={{ py: 8 }} maxWidth="md">
+    <Container sx={{ py: 8}} maxWidth="md">
+      <Typography variant="h2" color="white"> Roster</Typography>
       <Sorting handleSort={handleSort} />
-
-      <Grid container spacing={4}>
+      <Grid container spacing={4} sx={{marginTop:'1px'}}>
         {sortedPlayers.map((player) => (
           <Grid item key={player.nbaId} xs={12} sm={6} md={4}>
             <Card
               sx={{ height: "100%", display: "flex", flexDirection: "column" }}
-              onClick={() => setSelectedPlayer(player)}
+              onClick={() => setPlayer(player.nbaId)}
             >
-              <CardActionArea>
+              <CardActionArea component={Link} to={"/player"}>
                 <Pfp nbaId={player.nbaId} />
                 <CardContent sx={{ flexGrow: 1 }}>
                   <Typography gutterBottom variant="h5" component="h2">
@@ -64,7 +59,8 @@ const PlayerCards = ({ team, stat }) => {
           </Grid>
         ))}
       </Grid>
+      <TeamPerformance/>
     </Container>
   );
 };
-export default PlayerCards;
+export default PlayerCard;
