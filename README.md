@@ -103,29 +103,7 @@ To set this up locally:
   npm install npm@latest -g
   ```
 
-### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-1. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
-3. Start the server
-   ```sh
-   npm start server;
-   ```
-4. Star the app
-    ```sh
-    npm start;
-    ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- USAGE EXAMPLES -->
 
 ## Compatibility
 
